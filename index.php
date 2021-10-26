@@ -12,7 +12,6 @@
 
         <title>EasyStock - Login</title>
     </head>
-
     <body class="background">
         <div class="loginwrapper">
             <div class="login shadow-lg mb-5">
@@ -21,34 +20,34 @@
                     <h2 class="mb-0 mt-3">Admin Login</h2>
                 </div>
 
-                <form class="form-pop my-2">
+
+
+
+                <form class="form-pop my-2" method="POST">
                     <div>
-                        <p>
+                        <div class="form-group">
                             <svg class='input-icon' id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>94 user</title><path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/><path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/></svg>
-                            <input class="input form-control rounded-0" type="text" name="Username" placeholder="Enter username" required/>
-                        </p>
-                        <p>
+                            <input class="input form-control rounded-0" type="text" name="Username" value="Enter your username" placeholder="Enter username" required/>
+                        </div>
+                        <div class="form-group">
                             <svg class='input-icon' id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>71 lock</title><path d="M19,8.424V7A7,7,0,0,0,5,7V8.424A5,5,0,0,0,2,13v6a5.006,5.006,0,0,0,5,5H17a5.006,5.006,0,0,0,5-5V13A5,5,0,0,0,19,8.424ZM7,7A5,5,0,0,1,17,7V8H7ZM20,19a3,3,0,0,1-3,3H7a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3H17a3,3,0,0,1,3,3Z"/><path d="M12,14a1,1,0,0,0-1,1v2a1,1,0,0,0,2,0V15A1,1,0,0,0,12,14Z"/></svg>
                             <input class="input form-control rounded-0" type="password" name="Password" placeholder="Password" requiered/>
-                        </p>
-                        <div class="text-center">
-                            <p>
-                                <input type="checkbox" name="remember" id="remember"/> 
-                                <label class="font-weight-bold" htmlFor="remember"> Remember me for 14 days</label>
-                            </p>
                         </div>
+                        
                     </div>
 
                     <div class="button-center mt-4">
-                            <button class="submit" name="login">
+                            <button class="submit">
                                 Login
                             </button>
                     </div>
-
                 </form>
 
-                <br/>
 
+
+
+
+                <br/>
             </div>
         </div>
     </body>
