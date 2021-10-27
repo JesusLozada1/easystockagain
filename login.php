@@ -12,8 +12,8 @@ if(isset($_POST['Username'])){
     $result=mysqli_query($loginCon,$sql);
     
     if(mysqli_num_rows($result)==1){
-        echo " You Have Successfully Logged in";
         header('Location: ./pages/homepage.html');
+        echo "You Have Successfully Logged in";
         exit();
     }
     else{

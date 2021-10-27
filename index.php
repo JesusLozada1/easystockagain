@@ -21,7 +21,7 @@
                 </div>
 
 
-                <?php require_once('login.php'); ?>
+                <?php include('login.php'); ?>
               
                 <form class="form-pop my-2" method="POST">
                     <div>
