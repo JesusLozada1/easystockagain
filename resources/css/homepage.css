@@ -216,7 +216,7 @@ body.active .section{
 .card {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     background-color: white;
     margin-bottom: 25px;
     border-radius: 10px;
