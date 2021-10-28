@@ -51,19 +51,13 @@
         <hr>
         <ul class="nav nav-pills link-dark flex-column mb-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
+            <a href="../pages/homepage.php" class="nav-link active" aria-current="page">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
               Dashboard
             </a>
           </li>
           <li>
-            <a href="../table/table.php" class="nav-link link-dark">
+            <a href="../table/table.php" class="nav-link link-active">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
               Tables
             </a>
