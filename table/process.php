@@ -10,7 +10,7 @@ if(isset($_POST['add'])){
     $insert=("INSERT INTO paint (paint_name, paint_brand, paint_color) VALUES('$paname', '$pabrand', '$pacolor')");
 
     mysqli_query($invCon, $insert) or die(mysqli_error());
-
+    header('Location: ../table/table.php');
 
 }       
 

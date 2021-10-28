@@ -40,6 +40,7 @@
                             <button class="submit">
                                 Login
                             </button>
+                            <a href="#">Forgot Password?</a>
                     </div>
                 </form>
 

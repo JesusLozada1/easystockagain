@@ -117,40 +117,9 @@
                     <h1 class="main-header_title fs-3">Welcome to your Dashboard!</h1>
                     <p class="main-header_subtitle mb-0">Hello User, this is your daily reports.</p>
                     
-
                   </div>
                 </div>
         </div>  
-
-        
-    <table class="table table-border table-hover">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Color</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-        <?php
-
-           $invCon = mysqli_connect('localhost','root','', 'inventory');
-           
-            $sql = "SELECT * FROM paint;";
-            $result = mysqli_query($invCon,$sql);
-            while($row = mysqli_fetch_assoc($result))
-            {
-                echo "<tr>
-                <td>".$row['paint_name']."</td>
-                <td>".$row['paint_brand']."</td>
-                <td>".$row['paint_color']."</td>
-            </tr>";
-            }
-        ?>
-        </tbody>  
-    </table>
-
     </div>
   </div>
 </main>
@@ -160,4 +129,4 @@
 
 
 </body>
-</html>
+</html>5
