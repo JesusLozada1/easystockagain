@@ -71,8 +71,19 @@
               Customers
             </a>
           </li>
-        </ul>
-        
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              About EZ stock
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              Contact Us
+            </a>
+          </li>
+        </ul>  
         <hr>
         
       </div>

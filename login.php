@@ -12,7 +12,7 @@ if(isset($_POST['Username'])){
     $result=mysqli_query($loginCon,$sql);
     
     if(mysqli_num_rows($result)==1){
-        header('Location: ./homepage.php');
+        header('Location: ../pages/homepage.php');
         echo "You Have Successfully Logged in";
         exit();
     }
