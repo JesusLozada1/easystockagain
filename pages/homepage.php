@@ -48,7 +48,7 @@
         <hr>
         <ul class="nav nav-pills link-dark flex-column mb-auto">
           <li class="nav-item">
-            <a href="homepage.html" class="nav-link active" aria-current="page">
+            <a href="../pages/homepage.php" class="nav-link active" aria-current="page">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
               Dashboard
             </a>
@@ -61,13 +61,13 @@
           </li>
           <li>
             <a href="../table/table_process.php" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
               Add Items
             </a>
           </li>
           <li>
             <a href="../table/table_process.php" class="nav-link link-active">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
               Update Items
             </a>
           </li>
@@ -75,6 +75,18 @@
             <a href="#" class="nav-link link-dark">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
               Customers
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              About EZ stock
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              Contact Us
             </a>
           </li>
         </ul>
@@ -115,7 +127,7 @@
                 <div class="welcome">
                   <div class="content rounded-3 p-3">
                     <h1 class="main-header_title fs-3">Welcome to your Dashboard!</h1>
-                    <p class="main-header_subtitle mb-0">Hello User, this is your daily reports.</p>
+                    <p class="main-header_subtitle mb-0">Hello Admin, this is your daily reports</p>
                     
                   </div>
                 </div>

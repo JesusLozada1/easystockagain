@@ -48,7 +48,7 @@
         <hr>
         <ul class="nav nav-pills link-dark flex-column mb-auto">
           <li class="nav-item">
-            <a href="homepage.html" class="nav-link active" aria-current="page">
+            <a href="../pages/homepage.php" class="nav-link active" aria-current="page">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
               Dashboard
             </a>
@@ -66,19 +66,24 @@
             </a>
           </li>
           <li>
-            <a href="../table/table_process.php" class="nav-link link-active">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-              Update Items
-            </a>
-          </li>
-          <li>
             <a href="#" class="nav-link link-dark">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
               Customers
             </a>
           </li>
-        </ul>
-        
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              About EZ stock
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              Contact Us
+            </a>
+          </li>
+        </ul>  
         <hr>
         
       </div>
@@ -121,127 +126,7 @@
                 </div>
              <!--END OF WELCOME-->   
                 <!-- OVERVIEW CARDS-->
-                <div class="main-overview">
-                  <div class="overviewCard">
-                    <div class="overviewCard-icon overviewCard-icon--document align-items-center">
-                       <i class="fas fa-traffic-light fa-2x"></i>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="overviewCard-description">
-                      <h3 class="overviewCard-title">Total <strong>Traffic</strong></h3>
-                      <p class="overviewCard-subtitle font-weight-bold">350,897&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 9.63%</span></p>
-                    </div>
-                  </div>
-                  <div class="overviewCard">
-                    <div class="overviewCard-icon overviewCard-icon--calendar">
-                       <i class="fas fa-user-friends fa-2x"></i>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="overviewCard-description">
-                      <h3 class="overviewCard-title">New <strong>Users</strong></h3>
-                      <p class="overviewCard-subtitle font-weight-bold">2,356&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 9.63%</span></p>
-                    </div>
-                  </div>
-                  <div class="overviewCard">
-                    <div class="overviewCard-icon overviewCard-icon--photo">
-                       <i class="fas fa-chart-line fa-2x"></i>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="overviewCard-description">
-                      <h3 class="overviewCard-title"> <strong>Sales</strong></h3>
-                      <p class="overviewCard-subtitle font-weight-bold">924&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 10.90%</span></p>
-                    </div>
-                  </div>
-                  <div class="overviewCard">
-                    <div class="overviewCard-icon overviewCard-icon--mail">
-                       <i class="far fa-envelope fa-2x"></i>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="overviewCard-description">
-                      <h3 class="overviewCard-title">Recent <strong>Emails</strong></h3>
-                      <p class="overviewCard-subtitle font-weight-bold">+10</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <!--END OF OVERVIEW CARDS-->
-                <!--MAIN CARDS-->
-                <div>
-                  <div class="main__cards">
-                    <div class="card">
-                      <div class="card__header">
-                        <div class="card__header-title text-light">Your <strong>Events</strong>
-                          <a href="#" class="card__header-link text-bold">View All</a>
-                        </div>
-                      </div>
-                      <div class="card__main">
-                        <div class="card__row">
-                          <div class="card__icon"><i class="fas fa-gift"></i></div>
-                          <div class="card__time">
-                            <div>today</div>
-                          </div>
-                          <div class="card__detail">
-                            <div class="card__source text-bold">Jonathan G</div>
-                            <div class="card__description">Going away party at 8:30pm. Bring a friend!</div>
-                            <div class="card__note">1404 Gibson St</div>
-                          </div>
-                        </div>
-                        <div class="card__row">
-                          <div class="card__icon"><i class="fas fa-plane"></i></div>
-                          <div class="card__time">
-                            <div>Tuesday</div>
-                          </div>
-                          <div class="card__detail">
-                            <div class="card__source text-bold">Matthew H</div>
-                            <div class="card__description">Flying to Bora Bora at 4:30pm</div>
-                            <div class="card__note">Delta, Gate 27B</div>
-                          </div>
-                        </div>
-                        <div class="card__row">
-                          <div class="card__icon"><i class="fas fa-book"></i></div>
-                          <div class="card__time">
-                            <div>Thursday</div>
-                          </div>
-                          <div class="card__detail">
-                            <div class="card__source text-bold">National Institute of Science</div>
-                            <div class="card__description">Join the institute for an in-depth look at Stephen Hawking</div>
-                            <div class="card__note">7:30pm, Carnegie Center for Science</div>
-                          </div>
-                        </div>
-                        <div class="card__row">
-                          <div class="card__icon"><i class="fas fa-heart"></i></div>
-                          <div class="card__time">
-                            <div>Friday</div>
-                          </div>
-                          <div class="card__detail">
-                            <div class="card__source text-bold">24th Annual Heart Ball</div>
-                            <div class="card__description">Join us and contribute to your favorite local charity.</div>
-                            <div class="card__note">6:45pm, Austin Convention Ctr</div>
-                          </div>
-                        </div>
-                        <div class="card__row">
-                          <div class="card__icon"><i class="fas fa-heart"></i></div>
-                          <div class="card__time">
-                            <div>Saturday</div>
-                          </div>
-                          <div class="card__detail">
-                            <div class="card__source text-bold">Little Rock Air Show</div>
-                            <div class="card__description">See the Blue Angels fly with roaring thunder</div>
-                            <div class="card__note">11:00pm, Jacksonville Airforce Base</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  <div class="card card--finance" id="finance">
-                    <div class="card__header">
-                      <div class="card__header-title text-light">Monthly <strong>Sales</strong>
-                        <a href="#" class="card__header-link text-bold">View All</a>
-                      </div>
-                    </div>
-                    <div id="chart"><h6 class="text-small">Chart goes here.</h6></div>
-                  </div>
-                  </div>
-                </div>
+               
                 <!--END OF MAIN CARDS--> 
                 
                 <!--CHARTS-->

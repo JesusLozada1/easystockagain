@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <title>Dashboard - EasyStock</title>
@@ -20,18 +23,20 @@
 </head>
 <body class="background">
 <?php
+        require_once 'process.php'; ?>
 
-if (isset($_SESSION['message'])): ?>
+        <?php
+          if (isset($_SESSION['message'])): ?>
 
-<div class="alert alert-<?=$_SESSION['msg_type']?>">
-    
-<?php 
-  echo $_SESSION['message'];
-  unset($_SESSION['message']);
+          <div class="alert alert-<?=$_SESSION['msg_type']?>">
+        
+            <?php 
+              echo $_SESSION['message'];
+              unset($_SESSION['message']);
+            ?>
 
-?>
-</div>
-<?php endif ?>
+          </div>
+          <?php endif; ?>
 
     <main>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -74,7 +79,7 @@ if (isset($_SESSION['message'])): ?>
             </a>
           </li>
           <li>
-            <a href="../table/table_process.php" class="nav-link link-active">
+            <a href="../table/table_process.php" class="nav-link link-dark">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
               Add Items
             </a>
@@ -136,54 +141,58 @@ if (isset($_SESSION['message'])): ?>
                     </div>
                 </div>
             <!--END OF NAVBAR-->
-             <!--WELCOME-->
-             <div class="p-4">
+            <!--WELCOME-->
+            <div class="p-4">
                 <div class="welcome">
                   <div class="content rounded-3 p-3">
                     <h1 class="main-header_title fs-3">Welcome to your Dashboard!</h1>
-                    <p class="main-header_subtitle mb-0">Hello Admin, this is your department inventory</p>
+                    <p class="main-header_subtitle mb-0">Hello Admin, this is where you add items to your department</p>
                     
                   </div>
                 </div>
-           
         </div>  
 
-    <div class="container">
-    <table class="table table-border table-hover">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Color</th>
-                <th colspan="2">Action</th>
-            </tr>
-        </thead>
+       
+<div class="row justify-content-center">
+
+<form action="process.php" method="POST">
+<input type = "hidden" name="id" value="<?php echo $id; ?>">
+    <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="pname" class="form-control" 
+    value="<?php echo $paname; ?>" placeholder="Enter paint name">
+    </div>
+
+    <div class="form-group">
+    <label>Brand</label>
+    <input type="text" name="pbrand" class="form-control"
+    value="<?php echo $pabrand; ?>" placeholder="Enter paint brand">
+    </div>
+
+    <div class="form-group">
+    <label>Color</label>
+    <input type="text" name="pcolor" class="form-control"
+    value="<?php echo $pacolor; ?>" placeholder="Enter paint color">
+    </div>    
 
 
-        <?php
+    <div class="form-group"> 
 
-            $invCon = mysqli_connect('localhost','root','', 'inventory');
+    <?php
+    if ($update == true):
+    ?>
 
-            $sql = "SELECT * FROM paint;";
-            $result = mysqli_query($invCon,$sql);
-            ?>
+    <button type="submit" class="btn btn-info" name="update">Update</button>
+   <?php else: ?>
 
-           <?php while($row = mysqli_fetch_assoc($result)): ?>
-            
-              <tr>
-                <td><?php echo $row['paint_name']; ?></td>
-                <td><?php echo $row['paint_brand']; ?></td>
-                <td><?php echo $row['paint_color']; ?></td>
-                <td>
-                  <a href="table_edit.php?edit=<?php echo $row['paint_id']; ?>"
-                    class="btn btn-info">Edit</a>
-                  <a href="process.php?delete=<?php echo $row['paint_id']; ?>"
-                    class="btn btn-danger">Delete</a>
-                </td>
-            </tr>
-            <?php endwhile; ?>
-    </table>
-           </div>
+    <button type="submit" class="btn btn-primary" name="add">ADD</button>
+    <?php endif; ?>
+    </div>
+    
+</form>
+</div>
+       
+
     </div>
   </div>
 </main>
@@ -193,4 +202,4 @@ if (isset($_SESSION['message'])): ?>
 
 
 </body>
-</html>
+</html>5
