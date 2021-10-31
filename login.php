@@ -17,8 +17,7 @@ if(isset($_POST['Username'])){
         exit();
     }
     else{
-        echo " You Have Entered Incorrect Password";
-        exit();
+        header('Location: index.php');
     }
         
 }
