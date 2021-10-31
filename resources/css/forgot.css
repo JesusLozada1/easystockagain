@@ -1,0 +1,71 @@
+.background{
+    background-image: url("../images/bg-registration-form-7.jpg");
+    background-size: cover;
+}
+
+.logo{
+    max-height: 6rem;
+}
+
+.login{
+    width: 450px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4.5%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.loginwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-header{
+    background: linear-gradient(90deg, rgb(158, 225, 245), rgba(243, 214, 255, 0.7), rgba(92, 255, 165, 0.4));
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 1.5em 0;
+    position: relative;
+}
+
+.form-header h2{
+    font-weight: 600;
+}
+
+.form-pop{
+    padding: 0 4em;
+}
+
+.input{
+    border: 0 !important;
+    border-bottom: 2px solid #6e6e6e !important;
+    background-color: transparent !important;
+    padding-left: 40px !important;
+    margin-bottom: .5em;
+}
+
+.input::placeholder{
+    color: #9e81aa !important;
+}
+
+.input-icon {
+    fill:grey;
+    transform: translateY(30px);
+    padding-left: 2px;
+    height: 25px;
+    width: 25px;
+}
+
+.submit{
+    border-radius: 1vmin;
+    border:1px solid #9e81aa;
+    background-color: white;
+    color:#9e81aa;
+    width: 100%;
+    font-size: 2vmin;
+    transition:all 0.5s ease;
+}
