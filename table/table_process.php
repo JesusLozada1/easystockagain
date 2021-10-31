@@ -22,6 +22,22 @@
     
 </head>
 <body class="background">
+<?php
+        require_once 'process.php'; ?>
+
+        <?php
+          if (isset($_SESSION['message'])): ?>
+
+          <div class="alert alert-<?=$_SESSION['msg_type']?>">
+        
+            <?php 
+              echo $_SESSION['message'];
+              unset($_SESSION['message']);
+            ?>
+
+          </div>
+          <?php endif; ?>
+
     <main>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="home" viewBox="0 0 16 16">
@@ -64,8 +80,14 @@
           </li>
           <li>
             <a href="../table/table_process.php" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
               Add Items
+            </a>
+          </li>
+          <li>
+            <a href="../table/table_process.php" class="nav-link link-active">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+              Update Items
             </a>
           </li>
           <li>
@@ -124,31 +146,33 @@
                 <div class="welcome">
                   <div class="content rounded-3 p-3">
                     <h1 class="main-header_title fs-3">Welcome to your Dashboard!</h1>
-                    <p class="main-header_subtitle mb-0">Hello User, this is your daily reports.</p>
+                    <p class="main-header_subtitle mb-0">Hello Admin, this is where you add items to your department</p>
                     
                   </div>
                 </div>
         </div>  
 
-        <?php require_once 'process.php'; ?>
-
+       
 <div class="row justify-content-center">
 
 <form action="process.php" method="POST">
 
     <div class="form-group">
     <label>Name</label>
-    <input type="text" name="pname" class="form-control" value="Enter paint name">
+    <input type="text" name="pname" class="form-control" 
+    v placeholder="Enter paint name">
     </div>
 
     <div class="form-group">
     <label>Brand</label>
-    <input type="text" name="pbrand" class="form-control" value="Enter paint brand">
+    <input type="text" name="pbrand" class="form-control"
+     placeholder="Enter paint brand">
     </div>
 
     <div class="form-group">
     <label>Color</label>
-    <input type="text" name="pcolor" class="form-control" value="Enter paint color">
+    <input type="text" name="pcolor" class="form-control"
+     placeholder="Enter paint color">
     </div>    
 
     <div class="form-group">  
