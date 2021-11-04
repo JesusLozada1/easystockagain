@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$invCon = mysqli_connect('localhost','root','', 'inventory') or die(mysqli_error());
+$invCon = mysqli_connect('localhost','root','', 'inventory') or die(mysqli_error($invCon));
 
 $update = false;
 $id = 0;
@@ -16,7 +16,7 @@ if(isset($_POST['add'])){
 
     $insert=("INSERT INTO paint (paint_name, paint_brand, paint_color) VALUES('$paname', '$pabrand', '$pacolor')");
 
-    mysqli_query($invCon, $insert) or die(mysqli_error());
+    mysqli_query($invCon, $insert) or die(mysqli_error($invCon));
 
     
     $_SESSION['message'] =  "Record has been added!";
