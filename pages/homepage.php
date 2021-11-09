@@ -56,19 +56,13 @@
           <li>
             <a href="../table/table.php" class="nav-link link-dark">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-              Tables
+              Paint Department
             </a>
           </li>
           <li>
-            <a href="../table/table_process.php" class="nav-link link-dark">
+            <a href="../table/table_lumber.php" class="nav-link link-active">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-              Add Items
-            </a>
-          </li>
-          <li>
-            <a href="../table/table_process.php" class="nav-link link-active">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-              Update Items
+              Lumber Department
             </a>
           </li>
           <li>

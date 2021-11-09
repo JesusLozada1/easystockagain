@@ -67,12 +67,14 @@ if (isset($_SESSION['message'])): ?>
               Dashboard
             </a>
           </li>
+          <div class="dropdown">
           <li>
             <a href="../table/table.php" class="nav-link link-active">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
               Paint Department
             </a>
           </li>
+            </div>
           <li>
           <a href="../table/table_lumber.php" class="nav-link link-active">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
@@ -134,8 +136,8 @@ if (isset($_SESSION['message'])): ?>
              <div class="p-4">
                 <div class="welcome">
                   <div class="content rounded-3 p-3">
-                    <h1 class="main-header_title fs-3">Welcome to your Dashboard!</h1>
-                    <p class="main-header_subtitle mb-0">Hello Admin, this is your department inventory</p>
+                    <h1 class="main-header_title fs-3">Welcome Niko Bridge</h1>
+                    <p class="main-header_subtitle mb-0">This is your department inventory</p>
                     
                   </div>
                 </div>
@@ -147,7 +149,7 @@ if (isset($_SESSION['message'])): ?>
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Brand</th>
+                <th>Size</th>
                 <th>Color</th>
                 <th colspan="2">Action</th>
             </tr>
@@ -158,26 +160,26 @@ if (isset($_SESSION['message'])): ?>
 
             $invCon = mysqli_connect('localhost','root','', 'inventory');
 
-            $sql = "SELECT * FROM paint;";
+            $sql = "SELECT * FROM lumber;";
             $result = mysqli_query($invCon,$sql);
             ?>
 
            <?php while($row = mysqli_fetch_assoc($result)): ?>
             
               <tr>
-                <td><?php echo $row['paint_name']; ?></td>
-                <td><?php echo $row['paint_brand']; ?></td>
-                <td><?php echo $row['paint_color']; ?></td>
+                <td><?php echo $row['lumber_name']; ?></td>
+                <td><?php echo $row['lumber_size']; ?></td>
+                <td><?php echo $row['lumber_color']; ?></td>
                 <td>
-                  <a href="table_edit.php?edit=<?php echo $row['paint_id']; ?>"
+                  <a href="table_lumber_edit.php?edit=<?php echo $row['lumber_id']; ?>"
                     class="btn btn-info">Edit</a>
-                  <a href="process.php?delete=<?php echo $row['paint_id']; ?>"
+                  <a href="lumber_process.php?delete=<?php echo $row['lumber_id']; ?>"
                     class="btn btn-danger">Delete</a>
                 </td>
             </tr>
             <?php endwhile; ?>
     </table>
-    <a href="table_process.php"
+    <a href="lumber_add_process.php"
                     class="btn btn-info">Add</a>
            </div>
     </div>
@@ -186,7 +188,6 @@ if (isset($_SESSION['message'])): ?>
 
 <script src="../resources/js/scripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
 
 </body>
 </html>
