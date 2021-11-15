@@ -136,7 +136,7 @@
               </div>
         </div>  
     </div>
-  </div>
+    </div>
 </main>
 
 <script src="../resources/js/scripts.js"></script>
