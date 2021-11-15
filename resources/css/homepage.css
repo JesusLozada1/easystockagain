@@ -246,3 +246,7 @@ tr td:last-child {
 .status.orange {
 	background: orangered;
 }
+
+.table-responsive {
+	width: 100%;
+}
