@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../resources/css/homepage.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/css/contact.css">
+    <link rel="stylesheet" href="../resources/css/about.css">
 
     
     
@@ -27,7 +27,7 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="../pages/homepage.php" class="active"><span class="fas fa-igloo"></span><span>Dashboard</span></a>
+                    <a href="../pages/homepage.php"><span class="fas fa-igloo"></span><span>Dashboard</span></a>
                 </li>
                 <li>
                     <a href="../table/table.php"><span class="fas fa-table"></span><span>Paint Department</span></a>
@@ -39,10 +39,10 @@
                     <a href=""><span class="fas fa-user-friends"></span><span>Customers</span></a>
                 </li>
                 <li>
-                  <a href="../about/about_us.php"><span class="far fa-building"></span><span>About Us</span></a>
+                  <a class="active" href="../about/about_us.php"><span class="far fa-building"></span><span>About Us</span></a>
                 </li>
                 <li>
-                  <a href="../contact/contact.php"><span class="far fa-address-card"></span><span>Contact Us</span></a>
+                  <a  href="../contact/contact.php"><span class="far fa-address-card"></span><span>Contact Us</span></a>
                 </li>
             </ul>
         </div>
@@ -72,47 +72,39 @@
 
     
         <main>
-        <?php
-        require_once 'process.php'; ?>
+        <!--Start of contact form-->
+        <br>
 
-        <div class="row justify-content-center">
+<!--WELCOME-->
 
-        <form action="process.php" method="POST">
-        <input type = "hidden" name="id" value="<?php echo $id; ?>">
-            <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="pname" class="form-control" 
-            value="<?php echo $paname; ?>" placeholder="Enter paint name">
-            </div>
-        
-            <div class="form-group">
-            <label>Brand</label>
-            <input type="text" name="pbrand" class="form-control"
-            value="<?php echo $pabrand; ?>" placeholder="Enter paint brand">
-            </div>
-        
-            <div class="form-group">
-            <label>Color</label>
-            <input type="text" name="pcolor" class="form-control"
-            value="<?php echo $pacolor; ?>" placeholder="Enter paint color">
-            </div>    
-        
-        
-            <div class="form-group"> 
-        
-            <?php
-            if ($update == true):
-            ?>
-        
-            <button type="submit" class="btn btn-info" name="update">Update</button>
-           <?php else: ?>
-        
-            <button type="submit" class="btn btn-primary" name="add">ADD</button>
-            <?php endif; ?>
-            </div>
-            
-        </form>
-        </div>
+             <!--END OF WELCOME-->   
+                <!-- OVERVIEW CARDS-->
+               
+                <!--END OF MAIN CARDS--> 
+                
+                <!--CHARTS-->
+                
+                <!--END OF CHARTS-->
+
+                <!--Start of contact form-->
+                <br>
+
+                <div class="p-4 d-flex justify-content-center">
+                  <div id="about-header" class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center">
+                            <h4 class="py-3">
+                                  - About EasyStock -
+                            <h4>
+                        </div>
+                  </div>
+                </div>
+              
+              <!--End of contact form-->
+
+               
+
+
+</div>
        </main>
     </div>
 </body>
