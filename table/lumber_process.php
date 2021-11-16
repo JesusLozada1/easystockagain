@@ -5,16 +5,16 @@ $invCon = mysqli_connect('localhost','root','', 'inventory') or die(mysqli_error
 
 $update = false;
 $id = 0;
-$lname = '';
-$lsize = '';
-$lcolor = '';
+$laname = '';
+$lasize = '';
+$lacolor = '';
 
 if(isset($_POST['add'])){
-    $lname=$_POST['lname'];
-    $lsize=$_POST['lsize'];
-    $lcolor=$_POST['lcolor'];
+    $laname=$_POST['lname'];
+    $lasize=$_POST['lsize'];
+    $lacolor=$_POST['lcolor'];
 
-    $insert=("INSERT INTO lumber (lumber_name, lumber_size, lumber_color) VALUES('$lname', '$lsize', '$lcolor')");
+    $insert=("INSERT INTO lumber (lumber_name, lumber_size, lumber_color) VALUES('$laname', '$lasize', '$lacolor')");
 
     mysqli_query($invCon, $insert) or die(mysqli_error($invCon));
 
@@ -62,8 +62,8 @@ $laname = $_POST['lname'];
 $lasize= $_POST['lsize'];
 $lacolor= $_POST['lcolor'];
 
-$mysqlUpdate = "UPDATE lumber SET lumber_name='$laname', lumber_size='$lasize, lumber_color='$lacolor' WHERE lumber_id='$id' ";
-
+$mysqlUpdate =  "UPDATE lumber SET lumber_name='$laname', lumber_size='$lasize', lumber_color='$lacolor' WHERE lumber_id='$id' ";
+            
 mysqli_query($invCon, $mysqlUpdate) or die(mysqli_error($invCon));
 
 $_SESSION['message'] =  "Record has been updated!";
