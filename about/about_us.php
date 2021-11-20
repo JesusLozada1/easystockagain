@@ -9,10 +9,10 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossOrigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../resources/css/homepage.css">
+    <link rel="stylesheet" href="../resources/css/about.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/css/about.css">
+    <link rel="stylesheet" href="../resources/css/about-secondary.css">
 
     
     
@@ -92,11 +92,48 @@
                 <div class="p-4 d-flex justify-content-center">
                   <div id="about-header" class="d-flex justify-content-center align-items-center">
                         <div class="d-flex justify-content-center">
-                            <h4 class="py-3">
+                            <h4 class="py-3" id="h4-header">
                                   - About EasyStock -
                             <h4>
                         </div>
                   </div>
+                </div>
+
+                <br>
+
+                <div class="p-4 d-flex justify-content-center">
+                    <div id="about-body" class="p-4">
+                        <br>
+                        <div class="img-container p-2">
+                            <img id="img-2" src="../resources/images/inv-2.jpg" alt="">
+                            <img id="img-1" src="../resources/images/inv-1.jpg" alt="">
+                            
+                        </div>
+
+                        <br><br>
+
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
+                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
+                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
+                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
+                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
+                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
+                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
+                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
+                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
+                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
+                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
+
+                        </div>
+                        
+                        <br>
+                    
+                    </div>
                 </div>
               
               <!--End of contact form-->
