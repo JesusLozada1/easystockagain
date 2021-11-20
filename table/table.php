@@ -10,13 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossOrigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../resources/css/homepage.css">
-   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     
-
-    
-    
-
+    <script src="../resources/js/pagination.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -71,7 +68,7 @@
         </header>
 
         <main>
-        <table class="table table-border table-hover">
+        <table width="100%" class="table table-striped table-bordered table-hover" id="dtPaint">
         <thead>
             <tr>
                 <th>Name</th>
@@ -110,5 +107,11 @@
            
        </main>
     </div>
+    <script>
+    $(document).ready(function () {
+    $('#dtPaint').DataTable
+  });
+  </script>
+
 </body>
 </html>

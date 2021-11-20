@@ -71,7 +71,7 @@
         </header>
 
         <main>
-        <table class="table table-border table-hover">
+        <table width="100%" class="table table-striped table-bordered table-hover">
         <thead>
             <tr>
                 <th>Name</th>
