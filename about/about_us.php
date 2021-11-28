@@ -113,22 +113,26 @@
                         <br><br>
 
                         <div class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
-                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
-                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
-                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
-                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
-                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
-                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
-                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
-                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto 
-                            fugit eius temporibus aliquam consectetur labore distinctio impedit explicabo, 
-                            corrupti, veritatis doloremque cumque dolor sint autem aperiam voluptas rerum. Officia.
+                        Welcome to the online home of EZStock
 
+Here at EZStock we offer the very best in inventory management.
+
+We started EZStock with a single purpose, to provide the finest application to administrators and managers everywhere.
+
+We are a small group of developers creating a better inventory manager.
+
+At EZStock we are dedicated to:
+
+A great user experience.
+Providing an app that's easy to use.
+Helping you with your business.
+
+
+If you need any help at all please don't hesitate to contact us.
+
+Thank you!
+
+From all of us at EZStock
                         </div>
                         
                         <br>
