@@ -30,7 +30,7 @@
                     <a href="../table/table_lumber.php"><span class="fas fa-table"></span><span>Lumber Department</span></a>
                 </li>
                 <li>
-                    <a href=""><span class="fas fa-user-friends"></span><span>Customers</span></a>
+                    <a href="confirm_delete.php"><span class="fas fa-user-friends"></span><span>Customers</span></a>
                 </li>
                 <li>
                   <a href=""><span class="far fa-building"></span><span>About Us</span></a>

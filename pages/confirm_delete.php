@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="../resources/css/homepage.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/css/contact.css">
+
     
-    <script src="../resources/js/pagination.js"></script>
+    
+
 </head>
 <body>
     <div class="sidebar">
@@ -36,7 +39,7 @@
                     <a href=""><span class="fas fa-user-friends"></span><span>Customers</span></a>
                 </li>
                 <li>
-                  <a href="../about/about_us.php"><span class="far fa-building"></span><span>About Us</span></a>
+                  <a href=""><span class="far fa-building"></span><span>About Us</span></a>
                 </li>
                 <li>
                   <a href="../contact/contact.php"><span class="far fa-address-card"></span><span>Contact Us</span></a>
@@ -54,6 +57,8 @@
                 Dashboard
             </h2>
 
+            <?php include('../login.php'); ?>
+
             <div class="search-wrapper">
                 <span class="fas fa-search"></span>
                 <input type="search" placeholder="Search"/>
@@ -67,44 +72,9 @@
             </div>
         </header>
 
+    
         <main>
-        <table width="100%" class="table table-striped table-bordered table-hover" id="table_id">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Color</th>
-                <th colspan="2">Action</th>
-            </tr>
-        </thead>
-
-
-        <?php
-
-            $invCon = mysqli_connect('localhost','root','', 'inventory');
-
-            $sql = "SELECT * FROM paint;";
-            $result = mysqli_query($invCon,$sql);
-            ?>
-
-           <?php while($row = mysqli_fetch_assoc($result)): ?>
-            
-              <tr>
-                <td><?php echo $row['paint_name']; ?></td>
-                <td><?php echo $row['paint_brand']; ?></td>
-                <td><?php echo $row['paint_color']; ?></td>
-                <td>
-                  <a href="table_edit.php?edit=<?php echo $row['paint_id']; ?>"
-                    class="btn btn-info">Edit</a>
-                  <a href="process.php?delete=<?php echo $row['paint_id']; ?>"
-                    class="btn btn-danger">Delete</a>
-                </td>
-            </tr>
-            <?php endwhile; ?>
-    </table>
-    <a href="table_process.php"
-                    class="btn btn-info">Add</a>
-           
+     
        </main>
     </div>
 </body>
